@@ -1,0 +1,76 @@
+html,body{height:100%;}
+
+
+.carousel {
+    height: 500px;
+    margin-bottom: 60px;
+}
+.carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+.carousel-inner > .item > img {
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    min-width: 100%;
+    /*height: 500px;*/
+}
+.search {
+    margin-top: -600px;
+}
+.search .form-section{
+    background:rgba(0,0,0,0.6);
+    border: 2px solid #414141;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.put-the-dang-thing-in-the-middle {
+
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    /*position: absolute;*/
+    /*top: 0; left: 0; bottom: 0; right: 0;*/
+
+}
+
+#shorten-input {
+    width: 80%;
+    height: 70px;
+    margin: auto;
+    color: #999;
+    font-size: 1.9em;
+}
+
+
+.how-do-you {
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.link-mood{
+    color: #ffffff;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.link-mood:hover{
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.home {
+    padding-bottom: 20px;
+}
+
+
+.form-control::-webkit-input-placeholder {color: #dddddd;}
+.form-control:-moz-placeholder { /* Firefox 18- */    color: #dddddd;}
+.form-control::-moz-placeholder {  /* Firefox 19+ */    color: #dddddd;}
+.form-control:-ms-input-placeholder {    color: #dddddd;}
+
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}
