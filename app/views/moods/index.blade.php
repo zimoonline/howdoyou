@@ -33,7 +33,12 @@
                 </li>
                 @endforeach
             </ul>
+            <p>Number of mood's:</p>
+            <div class="number-moods">{{ $total }}</div>
+
             {{ HTML::link('/', 'Back', ['class' => 'btn btn-primary'])}}
+
+
         </div>
 
 

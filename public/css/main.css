@@ -65,7 +65,10 @@ html,body{height:100%;}
 .home {
     padding-bottom: 20px;
 }
-
+.number-moods {
+    font-size: 80px;
+    font-weight: 600;
+}
 
 .form-control::-webkit-input-placeholder {color: #dddddd;}
 .form-control:-moz-placeholder { /* Firefox 18- */    color: #dddddd;}

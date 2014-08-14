@@ -26,9 +26,10 @@ class MoodController extends \BaseController {
 	{
 		$moods = Mood::orderBy('count', 'desc')->paginate(15);
         $latest = Mood::orderBy('created_at', 'desc')->take(3)->get();
+        $total = DB::table('moods')->sum('count');
 
 
-        return View::make('moods.index', compact('moods', 'latest'));
+        return View::make('moods.index', compact('moods', 'latest', 'total'));
 	}
 
 	/**
@@ -82,7 +83,7 @@ class MoodController extends \BaseController {
         $moods = Mood::orderBy('count', 'desc')->paginate(15);
         $latest = Mood::orderBy('created_at', 'desc')->take(3)->get();
 
-        return View::make('moods.index', compact('moods','splits','latest'));
+        return Redirect::route('moods.index', compact('moods','splits','latest'));
 
 	}
 
