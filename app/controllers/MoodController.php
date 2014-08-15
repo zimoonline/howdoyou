@@ -1,5 +1,6 @@
 <?php
 
+use Carbon\Carbon;
 use HDYF\Forms\MoodForm;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
@@ -24,12 +25,13 @@ class MoodController extends \BaseController {
 	 */
 	public function index()
 	{
-		$moods = Mood::orderBy('count', 'desc')->paginate(15);
+		$moods = Mood::orderBy('count', 'desc')->paginate(10);
+        $newMoods = Mood::where('created_at', '>=', Carbon::now()->subDay())->take(6)->get();
+
         $latest = Mood::orderBy('created_at', 'desc')->take(3)->get();
         $total = DB::table('moods')->sum('count');
 
-
-        return View::make('moods.index', compact('moods', 'latest', 'total'));
+        return View::make('moods.index', compact('moods', 'latest', 'total', 'newMoods'));
 	}
 
 	/**

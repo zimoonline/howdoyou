@@ -6,9 +6,7 @@
 
         <h1 class="text-center">Best of moods</h1>
 
-      <div class="col-md-6">
-
-
+      <div class="col-md-4">
           <ul class="list-group">
               <li class="list-group-item disabled">Most popular</li>
               @foreach ($moods as $mood)
@@ -19,21 +17,35 @@
                   </li>
               @endforeach
           </ul>
+      </div>
+        <div class="col-md-4">
+        <ul class="list-group">
+            <li class="list-group-item disabled">Latest entries</li>
+            @foreach ($latest as $late)
+            <li class="list-group-item">
+                <span class="badge">{{ $late->created_at->diffForHumans() }}</span>
+                <p>{{{ $late->type }}}
 
-        </div>
+            </li>
+            @endforeach
+        </ul>
 
-        <div class="col-md-6">
             <ul class="list-group">
-                <li class="list-group-item disabled">Latest entries</li>
-                @foreach ($latest as $late)
-                <li class="list-group-item">
-                    <span class="badge">{{ $late->created_at->diffForHumans() }}</span>
-                    <p>{{{ $late->type }}}
+              <li class="list-group-item disabled">Entries in last 24h</li>
+              @foreach ($newMoods as $new)
+              <li class="list-group-item">
+                  <p>{{{ $new->type }}}
 
-                </li>
-                @endforeach
-            </ul>
-            <p>Number of mood's:</p>
+              </li>
+              @endforeach
+          </ul>
+
+
+
+      </div>
+
+        <div class="col-md-4">
+            <p>Number of moods:</p>
 
                 <h1 class="number-moods"><span class="counter">{{ $total }}</span></h1>
 
