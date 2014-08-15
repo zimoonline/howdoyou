@@ -26,10 +26,19 @@
       <file leaf-file-name="MoodController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/MoodController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="33" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="3650">
+            <state line="71" column="37" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0" vertical-offset="1625" max-vertical-offset="3650">
               <folding>
                 <element signature="e#7#31#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="1" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="1331" max-vertical-offset="2100">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -43,28 +52,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="28" selection-start="1879" selection-end="1996" vertical-scroll-proportion="0.0" vertical-offset="419" max-vertical-offset="1375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/moods/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="55" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1550">
+            <state line="56" column="0" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.0" vertical-offset="694" max-vertical-offset="1575">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <file leaf-file-name="master.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="18" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.6423927" vertical-offset="1231" max-vertical-offset="2100">
+            <state line="20" column="19" selection-start="659" selection-end="659" vertical-scroll-proportion="0.38231468" vertical-offset="206" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
@@ -94,14 +94,15 @@
         <option value="$PROJECT_DIR$/app/database/migrations/2014_08_11_182440_create_moods_table.php" />
         <option value="$PROJECT_DIR$/app/models/Mood.php" />
         <option value="$PROJECT_DIR$/app/HDYF/Forms/MoodForm.php" />
-        <option value="$PROJECT_DIR$/app/views/master.blade.php" />
         <option value="$PROJECT_DIR$/app/config/view.php" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/views/home.blade.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/MoodController.php" />
-        <option value="$PROJECT_DIR$/app/views/moods/index.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/jquery.countTo.js" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
+        <option value="$PROJECT_DIR$/app/views/moods/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/master.blade.php" />
       </list>
     </option>
   </component>
@@ -199,6 +200,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="howdoyou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="howdoyou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="howdoyou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="howdoyou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="howdoyou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -347,7 +380,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistory" value="main&#10;rou&#10;inde&#10;hom&#10;master&#10;view&#10;app.&#10;home&#10;main.cs&#10;create&#10;create_table&#10;str_limit&#10;facad&#10;error&#10;globa&#10;compo&#10;input&#10;route&#10;inputcon&#10;config.php&#10;config&#10;composer.json" />
+    <property name="SearchEverywhereHistory" value="main&#10;master&#10;rou&#10;inde&#10;hom&#10;view&#10;app.&#10;home&#10;main.cs&#10;create&#10;create_table&#10;str_limit&#10;facad&#10;error&#10;globa&#10;compo&#10;input&#10;route&#10;inputcon&#10;config.php&#10;config&#10;composer.json" />
     <property name="options.lastSelected" value="editing.templates" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -384,7 +417,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="819" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="819" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -553,13 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="541" selection-end="541" vertical-scroll-proportion="0.55266577" vertical-offset="0" max-vertical-offset="769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/HDYF/Forms/MoodForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="27" selection-start="162" selection-end="162" vertical-scroll-proportion="0.22756827" vertical-offset="0" max-vertical-offset="769">
@@ -569,7 +595,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/MoodController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="33" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="3650">
+        <state line="71" column="37" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0" vertical-offset="1625" max-vertical-offset="3650">
           <folding>
             <element signature="e#7#31#0" expanded="true" />
           </folding>
@@ -578,7 +604,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="28" selection-start="1879" selection-end="1996" vertical-scroll-proportion="0.0" vertical-offset="419" max-vertical-offset="1375">
+        <state line="48" column="28" selection-start="1879" selection-end="1996" vertical-scroll-proportion="1.3637567" vertical-offset="169" max-vertical-offset="1375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="1" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2100">
           <folding />
         </state>
       </provider>
@@ -592,14 +625,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/moods/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="55" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1550">
+        <state line="56" column="0" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.0" vertical-offset="694" max-vertical-offset="1575">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
+    <entry file="file://$PROJECT_DIR$/app/views/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="18" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.6423927" vertical-offset="1231" max-vertical-offset="2100">
+        <state line="20" column="19" selection-start="659" selection-end="659" vertical-scroll-proportion="0.38231468" vertical-offset="206" max-vertical-offset="975">
           <folding />
         </state>
       </provider>

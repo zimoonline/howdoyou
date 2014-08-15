@@ -34,7 +34,9 @@
                 @endforeach
             </ul>
             <p>Number of mood's:</p>
-            <div class="number-moods">{{ $total }}</div>
+
+                <h1 class="number-moods"><span class="counter">{{ $total }}</span></h1>
+
 
             {{ HTML::link('/', 'Back', ['class' => 'btn btn-primary'])}}
 
@@ -51,7 +53,5 @@
         </div>
         <div>Created by {{ HTML::mailto('sashafishte@gmail.com', 'sashafishter@gmail.com', ['class' => 'home']) }}</div>
     </div>
-
-
 
 @stop
