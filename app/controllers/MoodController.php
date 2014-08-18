@@ -25,10 +25,17 @@ class MoodController extends \BaseController {
 	 */
 	public function index()
 	{
-		$moods = Mood::orderBy('count', 'desc')->paginate(10);
-        $newMoods = Mood::where('created_at', '>=', Carbon::now()->subDay())->take(6)->get();
 
-        $latest = Mood::orderBy('created_at', 'desc')->take(3)->get();
+        $moods = Mood::orderBy('count', 'desc')->paginate(15);
+
+
+        $newMoods = Mood::where('updated_at', '>=', Carbon::now()->subDay())
+            ->orderBy('updated_at', 'desc')
+            ->get();
+
+        $latest = Mood::orderBy('updated_at', 'desc')->take(5)->get();
+
+
         $total = DB::table('moods')->sum('count');
 
         return View::make('moods.index', compact('moods', 'latest', 'total', 'newMoods'));
@@ -55,6 +62,8 @@ class MoodController extends \BaseController {
 	public function store()
 	{
         $this->moodForm->validate(Input::all());
+        $ip = Request::getClientIp();
+        $location = GeoIP::getLocation($ip);
 
         $mood = Input::get('type');
 //        $splits = preg_split('/^[a-z]+$\|&nbsp;/i', $mood);
@@ -68,24 +77,24 @@ class MoodController extends \BaseController {
             try {
                 $mood = Mood::where('type', $split)->firstOrFail();
                 $mood->count += 1;
+                $mood->ip = $location['country'];
                 $mood->save();
             } catch (ModelNotFoundException $e) {
                 Mood::create(array(
-                    'type' => $split,
+                    'type'  => $split,
                     'count' => 1,
+                    'ip'    => $location['country']
                 ));
 
             }
         }
 
-
-
 //        $number = Mood::where('type', $mood)->count();
 
-        $moods = Mood::orderBy('count', 'desc')->paginate(15);
-        $latest = Mood::orderBy('created_at', 'desc')->take(3)->get();
+//        $moods = Mood::orderBy('count', 'desc')->paginate(15);
+//        $latest = Mood::orderBy('created_at', 'desc')->take(3)->get();
 
-        return Redirect::route('moods.index', compact('moods','splits','latest'));
+        return Redirect::route('moods.index');
 
 	}
 

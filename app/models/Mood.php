@@ -2,5 +2,5 @@
 
 class Mood extends Eloquent {
 
-     protected $fillable = ['type', 'count'];
+     protected $fillable = ['type', 'count', 'ip'];
 }

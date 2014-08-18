@@ -19,9 +19,3 @@ Route::get('/', function()
 Route::get('mood', ['as' => 'moods.index', 'uses' => 'MoodController@index']);
 Route::post('mood', 'MoodController@store')->before('csrf');
 
-
-Route::get('/test', function(){
-    $input = Mood::orderBy('created_at', 'desc')->take(1);
-
-    dd($input);
-});

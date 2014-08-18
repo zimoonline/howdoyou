@@ -122,9 +122,11 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         'Laracasts\Validation\ValidationServiceProvider',
-        'Way\Generators\GeneratorsServiceProvider'
+        'Way\Generators\GeneratorsServiceProvider',
+        'Torann\GeoIP\GeoIPServiceProvider',
 
-	),
+
+    ),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -190,7 +192,8 @@ return array(
 		'URL'               => 'Illuminate\Support\Facades\URL',
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
+        'GeoIP'             => 'Torann\GeoIP\GeoIPFacade'
 
-	),
+    ),
 
 );
