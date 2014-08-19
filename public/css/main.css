@@ -70,6 +70,9 @@ html,body{height:100%;}
     font-weight: 600;
 }
 
+.link-created {
+    color: #FFFFFF;
+}
 .form-control::-webkit-input-placeholder {color: #dddddd;}
 .form-control:-moz-placeholder { /* Firefox 18- */    color: #dddddd;}
 .form-control::-moz-placeholder {  /* Firefox 19+ */    color: #dddddd;}

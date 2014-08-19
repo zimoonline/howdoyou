@@ -35,7 +35,6 @@ class MoodController extends \BaseController {
 
         $latest = Mood::orderBy('updated_at', 'desc')->take(5)->get();
 
-
         $total = DB::table('moods')->sum('count');
 
         return View::make('moods.index', compact('moods', 'latest', 'total', 'newMoods'));

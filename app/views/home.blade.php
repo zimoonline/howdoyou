@@ -2,21 +2,39 @@
 
 @section('content')
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="img/sample1.jpg" alt="First slide">
-            </div>
-            <div class="item">
-                <img src="img/sample2.jpg" alt="Second slide">
-            </div>
-            <div class="item">
-                <img src="img/sample3.jpg" alt="Third slide">
-            </div>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="./img/bg_01.jpg" alt="" />
         </div>
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        <div class="item">
+            <img src="./img/bg_02.jpg" alt="" />
+        </div>
+        <div class="item">
+            <img src="./img/sample1.jpg" alt="" />
+        </div>
+
+        <div class="item">
+            <img src="./img/sample2.jpg" alt="" />
+        </div>
+
+        <div class="item">
+            <img src="./img/sample3.jpg" alt="" />
+        </div>
+
     </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
 
 
     <div class="search">
@@ -38,13 +56,13 @@
                                     <p>{{ HTML::link(Request::url().'/mood',"See most popular mood's", ['class' => 'link-mood']) }}</p>
 
                                 </div>
-
-
                 </div>
 
 
+
         </div>
+
     </div>
 
-        <p class="link-created">Created by {{ HTML::mailto('sashafishte@gmail.com', 'sashafishter@gmail.com') }}</p>
+
 @stop
